@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		<ProjectGuid>{414FC4DD-ACAE-411B-BF38-9476168B210F}</ProjectGuid>
+		<OutputType>WinExe</OutputType>
+		<RootNamespace>ILMergeUI</RootNamespace>
+		<AssemblyName>ILMergeUI</AssemblyName>
+		<TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+		<FileAlignment>512</FileAlignment>
+		<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+		<Deterministic>true</Deterministic>
+		<PublishUrl>publish\</PublishUrl>
+		<Install>true</Install>
+		<InstallFrom>Disk</InstallFrom>
+		<UpdateEnabled>false</UpdateEnabled>
+		<UpdateMode>Foreground</UpdateMode>
+		<UpdateInterval>7</UpdateInterval>
+		<UpdateIntervalUnits>Days</UpdateIntervalUnits>
+		<UpdatePeriodically>false</UpdatePeriodically>
+		<UpdateRequired>false</UpdateRequired>
+		<MapFileExtensions>true</MapFileExtensions>
+		<ApplicationRevision>0</ApplicationRevision>
+		<ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+		<IsWebBootstrapper>false</IsWebBootstrapper>
+		<UseApplicationTrust>false</UseApplicationTrust>
+		<BootstrapperEnabled>true</BootstrapperEnabled>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugSymbols>true</DebugSymbols>
+		<DebugType>full</DebugType>
+		<Optimize>false</Optimize>
+		<OutputPath>bin\Debug\</OutputPath>
+		<DefineConstants>DEBUG;TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		<PlatformTarget>AnyCPU</PlatformTarget>
+		<DebugType>pdbonly</DebugType>
+		<Optimize>true</Optimize>
+		<OutputPath>bin\Release\</OutputPath>
+		<DefineConstants>TRACE</DefineConstants>
+		<ErrorReport>prompt</ErrorReport>
+		<WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<PropertyGroup>
+		<ApplicationIcon>ResourcesData\Icons\Application\Icon.ico</ApplicationIcon>
+	</PropertyGroup>
+	<PropertyGroup>
+		<ApplicationManifest>App.manifest</ApplicationManifest>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="HtmlRenderer, Version=1.5.0.5, Culture=neutral, processorArchitecture=MSIL">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>ResourcesData\Libraries\HTMLRenderer\HtmlRenderer.dll</HintPath>
+		</Reference>
+		<Reference Include="HtmlRenderer.WinForms, Version=1.5.0.6, Culture=neutral, processorArchitecture=MSIL">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>ResourcesData\Libraries\HTMLRenderer\HtmlRenderer.WinForms.dll</HintPath>
+		</Reference>
+		<Reference Include="CommonMark, Version=0.1.0.0, Culture=neutral, PublicKeyToken=001ef8810438905d, processorArchitecture=MSIL">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>ResourcesData\Libraries\CommonMark.dll</HintPath>
+		</Reference>
+		<Reference Include="Octokit, Version=5.0.2.0, Culture=neutral, PublicKeyToken=0be8860aee462442, processorArchitecture=MSIL">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>ResourcesData\Libraries\Octokit.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Windows.Forms" />
+		<Reference Include="System.Text.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+		<Reference Include="System.Drawing" />
+		<Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
+		<Reference Include="System.Xml" />
+		<Reference Include="System" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Include="Program.cs" />
+		<Compile Include="Properties\AssemblyInfo.cs" />
+		<Compile Include="ResourcesData\Source\Controllers\Localization\LocalizationController.cs" />
+		<Compile Include="ResourcesData\Source\Controllers\Localization\TranslationsController.cs" />
+		<Compile Include="ResourcesData\Source\Controllers\Saves\PathController.cs" />
+		<Compile Include="ResourcesData\Source\Controllers\Saves\SavesController.cs" />
+		<Compile Include="ResourcesData\Source\Controllers\UpdatesController.cs" />
+		<Compile Include="ResourcesData\Source\Core\AdditionalMethods.cs" />
+		<Compile Include="ResourcesData\Source\Core\Classes.cs" />
+		<Compile Include="ResourcesData\Source\Core\Colors.cs" />
+		<Compile Include="ResourcesData\Source\Data\SavedData.cs" />
+		<Compile Include="ResourcesData\Source\Functions\Merge\StartMerging.cs" />
+		<Compile Include="ResourcesData\Source\Managers\LocalizationManager.cs" />
+		<Compile Include="ResourcesData\Source\Managers\SavesManager.cs" />
+		<Compile Include="ResourcesData\Source\Managers\UpdatesManager.cs" />
+		<Compile Include="Template.cs">
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="Template.Designer.cs">
+			<DependentUpon>Template.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="Template.resx">
+			<DependentUpon>Template.cs</DependentUpon>
+		</EmbeddedResource>
+		<None Include="App.manifest" />
+		<Compile Include="Properties\Resources.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+			<DesignTime>True</DesignTime>
+		</Compile>
+		<Compile Include="Properties\Settings.Designer.cs">
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Settings.settings</DependentUpon>
+			<DesignTimeSharedInput>True</DesignTimeSharedInput>
+		</Compile>
+		<EmbeddedResource Include="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+			<SubType>Designer</SubType>
+		</EmbeddedResource>
+		<None Include="Properties\Settings.settings">
+			<Generator>SettingsSingleFileGenerator</Generator>
+			<LastGenOutput>Settings.Designer.cs</LastGenOutput>
+		</None>
+		<Compile Include="ResourcesData\Forms\Home.cs">
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="ResourcesData\Forms\Home.Designer.cs">
+			<DependentUpon>Home.cs</DependentUpon>
+		</Compile>
+		<Compile Include="ResourcesData\Forms\Merge.cs">
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="ResourcesData\Forms\Merge.Designer.cs">
+			<DependentUpon>Merge.cs</DependentUpon>
+		</Compile>
+		<Compile Include="ResourcesData\Forms\Settings.cs">
+			<SubType>Form</SubType>
+		</Compile>
+		<Compile Include="ResourcesData\Forms\Settings.Designer.cs">
+			<DependentUpon>Settings.cs</DependentUpon>
+		</Compile>
+		<EmbeddedResource Include="ResourcesData\Forms\Home.resx">
+			<DependentUpon>Home.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="ResourcesData\Forms\Merge.resx">
+			<DependentUpon>Merge.cs</DependentUpon>
+		</EmbeddedResource>
+		<EmbeddedResource Include="ResourcesData\Forms\Settings.resx">
+			<DependentUpon>Settings.cs</DependentUpon>
+		</EmbeddedResource>
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="App.config" />
+	</ItemGroup>
+	<ItemGroup>
+		<BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+			<Visible>False</Visible>
+			<ProductName>.NET Framework 3.5 SP1</ProductName>
+			<Install>false</Install>
+		</BootstrapperPackage>
+		<BootstrapperPackage Include=".NETFramework,Version=v4.8">
+			<Visible>False</Visible>
+			<ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+			<Install>true</Install>
+		</BootstrapperPackage>
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="ResourcesData\Gif\Preview.gif" />
+		<Content Include="ResourcesData\Icons\Application\Icon.ico" />
+		<Content Include="ResourcesData\Icons\Tabs\Colored\Merge_Colored.png" />
+		<Content Include="ResourcesData\Icons\Tabs\Colored\Settings_Colored.png" />
+		<Content Include="ResourcesData\Icons\Tabs\White\Merge_White.png" />
+		<Content Include="ResourcesData\Icons\Tabs\White\Settings_White.png" />
+		<Content Include="ResourcesData\Icons\Other\LanguageSwitcher.png" />
+		<Content Include="ResourcesData\Libraries\HtmlRenderer\HtmlRenderer.dll" />
+		<Content Include="ResourcesData\Libraries\HtmlRenderer\HtmlRenderer.WinForms.dll" />
+		<Content Include="ResourcesData\Libraries\CommonMark.dll" />
+		<Content Include="ResourcesData\Libraries\Octokit.dll" />
+		<Content Include="ResourcesData\Other\ILMerge\ILMerge.exe" />
+		<Content Include="ResourcesData\Other\ILMerge\System.Compiler.dll" />
+		<Content Include="ResourcesData\Other\Localization.xml" />
+	</ItemGroup>
+	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
