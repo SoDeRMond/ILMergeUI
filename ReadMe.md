@@ -54,6 +54,12 @@
 
 ***
 
+## ♦ Note
+
+• Works Only With Libraries as References
+
+***
+
 ## ♦ Downloading
 
 • Go to the [Releases Page](https://github.com/SoDeRMond/ILMergeUI/releases) to Download the Archive
