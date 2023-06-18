@@ -31,8 +31,11 @@ namespace ILMergeUI.ResourcesData.Source.Managers
 
 		public void Directory_Delete(string String_Directory, bool Bool_PathDelete)
 		{
-			if (Directory.Exists(Classes.Class_SavedData.String_SaveDirectory))
-			{ Classes.Class_SavesController.Directory_Delete(String_Directory, Bool_PathDelete); }
+			try
+			{
+				if (Directory.Exists(Classes.Class_SavedData.String_SaveDirectory))
+				{ Classes.Class_SavesController.Directory_Delete(String_Directory, Bool_PathDelete); }
+			} catch { }
 		}
 	}
 }

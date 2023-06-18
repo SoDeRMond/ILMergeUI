@@ -11,17 +11,18 @@ namespace ILMergeUI.ResourcesData.Source.Controllers.Saves
 		{ WriteIndented = true };
 
 
-		private readonly string String_SavePath = Path.Combine($"{Classes.Class_SavedData.String_SaveDirectory}\\{Classes.Class_SavedData.String_SaveName}");
-
-
 		public void Data_Save()
 		{
+			string String_SavePath = Path.Combine($"{Classes.Class_SavedData.String_SaveDirectory}\\{Classes.Class_SavedData.String_SaveName}");
+
 			string String_SerializeData = JsonSerializer.Serialize(Classes.Class_SavedData, JsonSerializerOptions_Saving);
 			File.WriteAllText(String_SavePath, String_SerializeData);
 		}
 
 		public void Data_Load()
 		{
+			string String_SavePath = Path.Combine($"{Classes.Class_SavedData.String_SaveDirectory}\\{Classes.Class_SavedData.String_SaveName}");
+
 			string String_SavedData = File.ReadAllText(String_SavePath);
 			Classes.Class_SavedData = JsonSerializer.Deserialize<SavedData>(String_SavedData);
 		}
@@ -35,13 +36,15 @@ namespace ILMergeUI.ResourcesData.Source.Controllers.Saves
 			{
 				if (Path.GetExtension(String_File) != ".json")
 				{ Bool_DirectoryDelete = false; }
+
+				else { File.Delete(String_File); }
 			}
 
 			if (Bool_DirectoryDelete == true)
-			{
-				if (Bool_PathDelete == true) { Classes.Class_PathController.Path_Delete(); }
-				Directory.Delete(String_Directory, true);
-			}
+			{ Directory.Delete(String_Directory, true); }
+
+			if (Bool_PathDelete == true)
+			{ Classes.Class_PathController.Path_Delete(); }
 		}
 	}
 }
