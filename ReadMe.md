@@ -12,9 +12,10 @@
 <br>
 
 <div align="center">
-	<a href="#♦-functions">Functions</a> •
-	<a href="#♦-downloading">Downloading</a> •
-	<a href="#♦-license">License</a>
+	<a href="#-functions">Functions</a> •
+	<a href="#-note">Note</a> •
+	<a href="#-downloading">Downloading</a> •
+	<a href="#-license">License</a>
 </div>
 
 ***
