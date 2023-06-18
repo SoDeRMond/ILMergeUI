@@ -23,7 +23,7 @@ namespace ILMergeUI
 			ComponentResourceManager resources = new ComponentResourceManager(typeof(Template));
 			this.Panel_Top = new Panel();
 			this.Label_Title = new Label();
-			this.Panel_Tool = new Panel();
+			this.Panel_Tools = new Panel();
 			this.Button_Minimize = new Button();
 			this.Button_Maximize = new Button();
 			this.Button_Close = new Button();
@@ -35,7 +35,7 @@ namespace ILMergeUI
 			this.Button_LanguageSwitcher = new Button();
 			this.Panel_FormsArea = new Panel();
 			this.Panel_Top.SuspendLayout();
-			this.Panel_Tool.SuspendLayout();
+			this.Panel_Tools.SuspendLayout();
 			this.Panel_Left.SuspendLayout();
 			this.Panel_Tabs.SuspendLayout();
 			this.SuspendLayout();
@@ -54,14 +54,14 @@ namespace ILMergeUI
 			this.Load += new EventHandler(this.Form_Template_Load);
 			this.Shown += new EventHandler(this.Form_Template_Shown);
 			this.Panel_Top.ResumeLayout(false);
-			this.Panel_Tool.ResumeLayout(false);
+			this.Panel_Tools.ResumeLayout(false);
 			this.Panel_Left.ResumeLayout(false);
 			this.Panel_Tabs.ResumeLayout(false);
 			this.ResumeLayout(false);
 
 			this.Panel_Top.BackColor = Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(70)))));
 			this.Panel_Top.Controls.Add(this.Label_Title);
-			this.Panel_Top.Controls.Add(this.Panel_Tool);
+			this.Panel_Top.Controls.Add(this.Panel_Tools);
 			this.Panel_Top.Dock = DockStyle.Top;
 			this.Panel_Top.Location = new Point(240, 0);
 			this.Panel_Top.Name = "Panel_Top";
@@ -79,15 +79,15 @@ namespace ILMergeUI
 			this.Label_Title.TextAlign = ContentAlignment.MiddleCenter;
 			this.Label_Title.MouseDown += new MouseEventHandler(this.Label_Title_MouseDown);
 
-			this.Panel_Tool.BackColor = Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(70)))));
-			this.Panel_Tool.Controls.Add(this.Button_Minimize);
-			this.Panel_Tool.Controls.Add(this.Button_Maximize);
-			this.Panel_Tool.Controls.Add(this.Button_Close);
-			this.Panel_Tool.Dock = DockStyle.Right;
-			this.Panel_Tool.Location = new Point(634, 0);
-			this.Panel_Tool.Name = "Panel_Tool";
-			this.Panel_Tool.Size = new Size(126, 60);
-			this.Panel_Tool.TabIndex = 0;
+			this.Panel_Tools.BackColor = Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(70)))));
+			this.Panel_Tools.Controls.Add(this.Button_Minimize);
+			this.Panel_Tools.Controls.Add(this.Button_Maximize);
+			this.Panel_Tools.Controls.Add(this.Button_Close);
+			this.Panel_Tools.Dock = DockStyle.Right;
+			this.Panel_Tools.Location = new Point(634, 0);
+			this.Panel_Tools.Name = "Panel_Tools";
+			this.Panel_Tools.Size = new Size(126, 60);
+			this.Panel_Tools.TabIndex = 0;
 
 			this.Button_Minimize.Dock = DockStyle.Right;
 			this.Button_Minimize.FlatAppearance.BorderSize = 0;
@@ -218,7 +218,7 @@ namespace ILMergeUI
 
 		private Panel Panel_Top;
 		private Label Label_Title;
-		private Panel Panel_Tool;
+		private Panel Panel_Tools;
 		private Button Button_Minimize;
 		private Button Button_Maximize;
 		private Button Button_Close;

@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="ILMergeUI/ResourcesData/Icons/Application/Icon.ico" />
+	<img src="ILMergeUI/ResourcesData/Icons/Application/Icon.ico">
 	<h1>ILMerge UI</h1>
 </div>
 
@@ -21,7 +21,7 @@
 ***
 
 <div align="center">
-	<img src="ILMergeUI/ResourcesData/Gif/Preview.gif" />
+	<img src="ILMergeUI/ResourcesData/Gif/Preview.gif">
 </div>
 
 ***

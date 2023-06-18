@@ -1,4 +1,4 @@
-﻿using ILMergeUI.ResourcesData.Source.Core;
+﻿using ILMergeUI.ResourcesData.Source.Root;
 using ILMergeUI.Properties;
 using System.Windows.Forms;
 using System.IO;

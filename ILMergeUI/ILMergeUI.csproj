@@ -85,9 +85,9 @@
 		<Compile Include="ResourcesData\Source\Controllers\Saves\PathController.cs" />
 		<Compile Include="ResourcesData\Source\Controllers\Saves\SavesController.cs" />
 		<Compile Include="ResourcesData\Source\Controllers\UpdatesController.cs" />
-		<Compile Include="ResourcesData\Source\Core\AdditionalMethods.cs" />
-		<Compile Include="ResourcesData\Source\Core\Classes.cs" />
-		<Compile Include="ResourcesData\Source\Core\Colors.cs" />
+		<Compile Include="ResourcesData\Source\Root\AdditionalMethods.cs" />
+		<Compile Include="ResourcesData\Source\Root\Classes.cs" />
+		<Compile Include="ResourcesData\Source\Root\Colors.cs" />
 		<Compile Include="ResourcesData\Source\Data\SavedData.cs" />
 		<Compile Include="ResourcesData\Source\Functions\Merge\StartMerging.cs" />
 		<Compile Include="ResourcesData\Source\Managers\LocalizationManager.cs" />

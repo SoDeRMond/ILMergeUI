@@ -1,4 +1,4 @@
-﻿using ILMergeUI.ResourcesData.Source.Core;
+﻿using ILMergeUI.ResourcesData.Source.Root;
 using ILMergeUI.ResourcesData.Source.Data;
 using System.Text.Json;
 using System.IO;

@@ -1,4 +1,4 @@
-﻿using ILMergeUI.ResourcesData.Source.Core;
+﻿using ILMergeUI.ResourcesData.Source.Root;
 using System.Threading.Tasks;
 
 namespace ILMergeUI.ResourcesData.Source.Managers

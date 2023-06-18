@@ -5,7 +5,7 @@ using ILMergeUI.ResourcesData.Source.Controllers;
 using ILMergeUI.ResourcesData.Source.Managers;
 using ILMergeUI.ResourcesData.Source.Data;
 
-namespace ILMergeUI.ResourcesData.Source.Core
+namespace ILMergeUI.ResourcesData.Source.Root
 {
 	public static class Classes
 	{

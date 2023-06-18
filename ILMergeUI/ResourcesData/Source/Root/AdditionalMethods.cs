@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Net;
 
-namespace ILMergeUI.ResourcesData.Source.Core
+namespace ILMergeUI.ResourcesData.Source.Root
 {
 	public class AdditionalMethods
 	{
