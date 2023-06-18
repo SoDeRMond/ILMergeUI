@@ -1,8 +1,10 @@
 ﻿using ILMergeUI.ResourcesData.Source.Root;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.IO.Compression;
 using System.Linq;
 using System.Net;
+using System.IO;
 using Octokit;
 
 namespace ILMergeUI.ResourcesData.Source.Controllers
@@ -11,13 +13,14 @@ namespace ILMergeUI.ResourcesData.Source.Controllers
 	{
 		private readonly string String_CurrentVersion = Classes.Class_AdditionalMethods.Symbols_Remove(System.Windows.Forms.Application.ProductVersion);
 
-		private readonly string String_ExecutablePath = System.Windows.Forms.Application.ExecutablePath;
 		private readonly string String_CompanyName = System.Windows.Forms.Application.CompanyName;
 		private readonly string String_ProductName = System.Windows.Forms.Application.ProductName.Replace(" ", string.Empty);
 
 
 		private GitHubClient GitHubClient_Update;
 		public Release Release_Latest;
+
+		private string String_LatestVersion;
 
 
 		private async Task<bool> Version_Check()
@@ -43,14 +46,29 @@ namespace ILMergeUI.ResourcesData.Source.Controllers
 			ReleaseAsset ReleaseAsset_Latest = ReleaseAsset_All.FirstOrDefault();
 
 			using (WebClient WebClient_Update = new WebClient())
-			{ WebClient_Update.DownloadFile(ReleaseAsset_Latest.BrowserDownloadUrl, $"{String_ProductName}_Latest.exe"); }
+			{ WebClient_Update.DownloadFile(ReleaseAsset_Latest.BrowserDownloadUrl, $"{String_ProductName}_Latest.zip"); }
+
+			Update_Run();
+		}
+
+		private string LatestVersion_Get()
+		{
+			int Int_Index = Release_Latest.TagName.IndexOf('v');
+			return (Int_Index == -1) ? Release_Latest.TagName : Release_Latest.TagName.Substring(Int_Index);
 		}
 
 		public void Update_Run()
 		{
+			string String_StartupDirectory = Path.GetDirectoryName(System.Windows.Forms.Application.StartupPath);
+			string String_OriginalProductName = System.Windows.Forms.Application.ProductName;
+
+			String_LatestVersion = LatestVersion_Get();
+			ZipFile.ExtractToDirectory($"{String_ProductName}_Latest.zip", String_StartupDirectory);
+
 			Classes.Class_AdditionalMethods.Process_Start
-				("CMD.exe", $"/C TaskKill /F /IM \"{String_ProductName}.exe\" && TimeOut /T 1 " +
-				$"&& Del \"{String_ExecutablePath}\" && Ren {String_ProductName}_Latest.exe \"{String_ProductName}.exe\" && \"{String_ExecutablePath}\"");
+				("CMD.exe", $"/C TaskKill /F /IM \"{String_ProductName}.exe\" && TimeOut /T 1 && Del /S /F /Q *.* " +
+				$"&& start CMD.exe /C Move /Y \"{String_StartupDirectory}\\{String_OriginalProductName} {String_LatestVersion}\\*.*\" . " +
+				$"&& TimeOut /T 1 && RMDir /S /Q \"{String_StartupDirectory}\\{String_OriginalProductName} {String_LatestVersion}\" && \"{String_OriginalProductName}.exe\"");
 		}
 	}
 }

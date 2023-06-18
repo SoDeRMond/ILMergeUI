@@ -11,10 +11,7 @@ namespace ILMergeUI.ResourcesData.Source.Managers
 		public string Body_Get()
 		{ return Classes.Class_UpdatesController.Release_Latest.Body; }
 
-		public async Task Update_Download()
+		public async Task Update_DownloadAndRun()
 		{ await Classes.Class_UpdatesController.Update_Download(); }
-
-		public void Update_Run()
-		{ Classes.Class_UpdatesController.Update_Run(); }
 	}
 }

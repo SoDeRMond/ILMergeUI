@@ -48,7 +48,7 @@ namespace ILMergeUI.ResourcesData.Forms
 			else
 			{
 				if (Classes.Class_SavedData.Int_AutoProgramUpdates == 0)
-				{ Update_Download(); }
+				{ Update_DownloadAndRun(); }
 
 				else
 				{
@@ -71,11 +71,11 @@ namespace ILMergeUI.ResourcesData.Forms
 			{ HtmlLabel_Content.Top -= 36; }
 		}
 
-		private async void Update_Download()
+		private async void Update_DownloadAndRun()
 		{
 			Translate_Get($"{_UpdateStatus}DownloadingUpdate", string.Empty);
 
-			try { await Classes.Class_UpdatesManager.Update_Download(); }
+			try { await Classes.Class_UpdatesManager.Update_DownloadAndRun(); }
 			catch { Program_Update(); }
 		}
 
@@ -86,10 +86,7 @@ namespace ILMergeUI.ResourcesData.Forms
 		{ Content_Scroll(MouseEventArgs_MouseWheel.Delta); }
 
 		private void Button_DownloadAndRun_Click(object Object_Button, EventArgs EventArgs_Click)
-		{
-			Update_Download();
-			Classes.Class_UpdatesManager.Update_Run();
-		}
+		{ Update_DownloadAndRun(); }
 
 		private void LinkLabel_GitHub_LinkClicked(object Object_LinkLabel, LinkLabelLinkClickedEventArgs LinkLabelLinkClickedEventArgs_LinkClicked)
 		{ Process.Start($"https://github.com/{Application.CompanyName}/{Application.ProductName}".Replace(" ", string.Empty)); }
