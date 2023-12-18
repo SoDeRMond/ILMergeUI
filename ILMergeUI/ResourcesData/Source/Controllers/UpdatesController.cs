@@ -66,7 +66,7 @@ namespace ILMergeUI.ResourcesData.Source.Controllers
 			ZipFile.ExtractToDirectory($"{String_ProductName}_Latest.zip", String_StartupDirectory);
 
 			Classes.Class_AdditionalMethods.Process_Start
-				("CMD.exe", $"/C TaskKill /F /IM \"{String_ProductName}.exe\" && TimeOut /T 1 && Del /S /F /Q *.* " +
+				("CMD.exe", $"/C TaskKill /F /IM \"{String_OriginalProductName}.exe\" && TimeOut /T 1 && Del /S /F /Q *.* " +
 				$"&& start CMD.exe /C Move /Y \"{String_StartupDirectory}\\{String_OriginalProductName} {String_LatestVersion}\\*.*\" . " +
 				$"&& TimeOut /T 1 && RMDir /S /Q \"{String_StartupDirectory}\\{String_OriginalProductName} {String_LatestVersion}\" && \"{String_OriginalProductName}.exe\"");
 		}
