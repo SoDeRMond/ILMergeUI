@@ -14,9 +14,9 @@ namespace ILMergeUI.ResourcesData.Source.Controllers.Localization
 			XmlDocument XmlDocument_Localization = new XmlDocument();
 			XmlDocument_Localization.LoadXml(Resources.Localization);
 
-			XmlNodeList XmlNodeList_Key = XmlDocument_Localization.GetElementsByTagName("Key");
-			XmlNodeList XmlNodeList_English = XmlDocument_Localization.GetElementsByTagName("English");
-			XmlNodeList XmlNodeList_Russian = XmlDocument_Localization.GetElementsByTagName("Russian");
+			XmlNodeList XmlNodeList_Key = XmlDocument_Localization.GetElementsByTagName("key");
+			XmlNodeList XmlNodeList_English = XmlDocument_Localization.GetElementsByTagName("english");
+			XmlNodeList XmlNodeList_Russian = XmlDocument_Localization.GetElementsByTagName("russian");
 
 			for (int Int_Key = 0; Int_Key < XmlNodeList_Key.Count; Int_Key++)
 			{
