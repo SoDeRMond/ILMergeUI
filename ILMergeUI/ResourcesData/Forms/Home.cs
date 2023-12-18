@@ -43,7 +43,7 @@ namespace ILMergeUI.ResourcesData.Forms
 			int Int_UpdateStatus = await Classes.Class_UpdatesManager.Status_Get();
 
 			if (Int_UpdateStatus == 0) { Translate_Get($"{_UpdateStatus}NoGitHubConnection", $"Home_HtmlLabel_Content_FailedToLoadChangeLog"); }
-			else if (Int_UpdateStatus == 1) { Translate_Get($"{_UpdateStatus}ProgramNoLongerSupported", $"Home_HtmlLabel_Content_FailedToLoadChangeLog"); }
+			else if (Int_UpdateStatus == 1) { Translate_Get($"{_UpdateStatus}FailedGetLatestVersion", $"Home_HtmlLabel_Content_FailedToLoadChangeLog"); }
 			else if (Int_UpdateStatus == 2) { Translate_Get($"{_UpdateStatus}YouUsingLatestVersionProgram", string.Empty); }
 
 			else

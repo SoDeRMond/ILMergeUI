@@ -47,10 +47,10 @@
 			<Russian>♦ Нет Подключения к GitHub</Russian>
 		</Translations>
 	</Key>
-	<Key Name="Home_Label_UpdateStatus_ProgramNoLongerSupported">
+	<Key Name="Home_Label_UpdateStatus_FailedGetLatestVersion">
 		<Translations>
-			<English>♦ Program no Longer Supported</English>
-			<Russian>♦ Программа Больше не Поддерживается</Russian>
+			<English>♦ Failed to Get Latest Version</English>
+			<Russian>♦ Не Удалось Получить Последнюю Версию</Russian>
 		</Translations>
 	</Key>
 	<Key Name="Home_Label_UpdateStatus_YouUsingLatestVersionProgram">
