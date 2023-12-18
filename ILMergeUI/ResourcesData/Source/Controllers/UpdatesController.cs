@@ -53,7 +53,7 @@ namespace ILMergeUI.ResourcesData.Source.Controllers
 
 		private string LatestVersion_Get()
 		{
-			int Int_Index = Release_Latest.TagName.IndexOf('v');
+			int Int_Index = Release_Latest.TagName.IndexOf("v");
 			return (Int_Index == -1) ? Release_Latest.TagName : Release_Latest.TagName.Substring(Int_Index);
 		}
 
