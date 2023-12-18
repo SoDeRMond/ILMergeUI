@@ -61,7 +61,7 @@ namespace ILMergeUI.ResourcesData.Forms
 			this.Panel_Top.Name = "Panel_Top";
 			this.Panel_Top.Padding = new Padding(4, 2, 4, 2);
 			this.Panel_Top.Size = new Size(760, 520);
-			this.Panel_Top.TabIndex = 1;
+			this.Panel_Top.TabIndex = 0;
 
 			this.GroupBox_ProgramUpdate.Controls.Add(this.Panel_Content);
 			this.GroupBox_ProgramUpdate.Controls.Add(this.Panel_Layer);
@@ -94,7 +94,7 @@ namespace ILMergeUI.ResourcesData.Forms
 			this.Label_ChangeLog.Name = "Label_ChangeLog";
 			this.Label_ChangeLog.Padding = new Padding(4, 0, 0, 2);
 			this.Label_ChangeLog.Size = new Size(746, 22);
-			this.Label_ChangeLog.TabIndex = 1;
+			this.Label_ChangeLog.TabIndex = 0;
 			this.Label_ChangeLog.Text = "♦ Change Log in Updated Version";
 			this.Label_ChangeLog.TextAlign = ContentAlignment.MiddleLeft;
 
@@ -103,13 +103,13 @@ namespace ILMergeUI.ResourcesData.Forms
 			this.Panel_Content.Location = new Point(3, 66);
 			this.Panel_Content.Name = "Panel_Content";
 			this.Panel_Content.Size = new Size(746, 415);
-			this.Panel_Content.TabIndex = 4;
+			this.Panel_Content.TabIndex = 0;
 
 			this.Panel_Layer.Dock = DockStyle.Bottom;
 			this.Panel_Layer.Location = new Point(3, 481);
 			this.Panel_Layer.Name = "Panel_Layer";
 			this.Panel_Layer.Size = new Size(746, 2);
-			this.Panel_Layer.TabIndex = 3;
+			this.Panel_Layer.TabIndex = 0;
 
 			this.Button_DownloadAndRun.Dock = DockStyle.Bottom;
 			this.Button_DownloadAndRun.Enabled = false;
@@ -119,7 +119,7 @@ namespace ILMergeUI.ResourcesData.Forms
 			this.Button_DownloadAndRun.Location = new Point(3, 483);
 			this.Button_DownloadAndRun.Name = "Button_DownloadAndRun";
 			this.Button_DownloadAndRun.Size = new Size(746, 30);
-			this.Button_DownloadAndRun.TabIndex = 2;
+			this.Button_DownloadAndRun.TabIndex = 0;
 			this.Button_DownloadAndRun.Text = "Download and Run";
 			this.Button_DownloadAndRun.Click += new EventHandler(this.Button_DownloadAndRun_Click);
 
@@ -140,7 +140,7 @@ namespace ILMergeUI.ResourcesData.Forms
 			this.LinkLabel_GitHub.Location = new Point(606, 0);
 			this.LinkLabel_GitHub.Name = "LinkLabel_GitHub";
 			this.LinkLabel_GitHub.Size = new Size(41, 16);
-			this.LinkLabel_GitHub.TabIndex = 1;
+			this.LinkLabel_GitHub.TabIndex = 0;
 			this.LinkLabel_GitHub.TabStop = true;
 			this.LinkLabel_GitHub.Text = "GitHub";
 			this.LinkLabel_GitHub.TextAlign = ContentAlignment.MiddleCenter;

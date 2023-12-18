@@ -66,7 +66,7 @@ namespace ILMergeUI
 			this.Panel_Top.Location = new Point(240, 0);
 			this.Panel_Top.Name = "Panel_Top";
 			this.Panel_Top.Size = new Size(760, 60);
-			this.Panel_Top.TabIndex = 1;
+			this.Panel_Top.TabIndex = 0;
 
 			this.Label_Title.Dock = DockStyle.Fill;
 			this.Label_Title.Font = new Font("Microsoft Sans Serif", 16F);
@@ -97,7 +97,7 @@ namespace ILMergeUI
 			this.Button_Minimize.Location = new Point(0, 0);
 			this.Button_Minimize.Name = "Button_Minimize";
 			this.Button_Minimize.Size = new Size(42, 60);
-			this.Button_Minimize.TabIndex = 2;
+			this.Button_Minimize.TabIndex = 0;
 			this.Button_Minimize.Text = "O";
 			this.Button_Minimize.Click += new EventHandler(this.Button_Minimize_Click);
 
@@ -109,7 +109,7 @@ namespace ILMergeUI
 			this.Button_Maximize.Location = new Point(42, 0);
 			this.Button_Maximize.Name = "Button_Maximize";
 			this.Button_Maximize.Size = new Size(42, 60);
-			this.Button_Maximize.TabIndex = 1;
+			this.Button_Maximize.TabIndex = 0;
 			this.Button_Maximize.Text = "O";
 			this.Button_Maximize.Click += new EventHandler(this.Button_Maximize_Click);
 
@@ -153,7 +153,7 @@ namespace ILMergeUI
 			this.Panel_Tabs.Location = new Point(0, 60);
 			this.Panel_Tabs.Name = "Panel_Tabs";
 			this.Panel_Tabs.Size = new Size(240, 540);
-			this.Panel_Tabs.TabIndex = 1;
+			this.Panel_Tabs.TabIndex = 0;
 
 			this.Button_Merge.Dock = DockStyle.Top;
 			this.Button_Merge.FlatAppearance.BorderSize = 0;
@@ -183,7 +183,7 @@ namespace ILMergeUI
 			this.Button_Settings.Name = "Button_Settings";
 			this.Button_Settings.Padding = new Padding(8, 0, 16, 0);
 			this.Button_Settings.Size = new Size(240, 42);
-			this.Button_Settings.TabIndex = 1;
+			this.Button_Settings.TabIndex = 0;
 			this.Button_Settings.Text = "  Settings";
 			this.Button_Settings.TextAlign = ContentAlignment.MiddleLeft;
 			this.Button_Settings.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -201,7 +201,7 @@ namespace ILMergeUI
 			this.Button_LanguageSwitcher.Name = "Button_LanguageSwitcher";
 			this.Button_LanguageSwitcher.Padding = new Padding(8, 0, 0, 0);
 			this.Button_LanguageSwitcher.Size = new Size(240, 42);
-			this.Button_LanguageSwitcher.TabIndex = 2;
+			this.Button_LanguageSwitcher.TabIndex = 0;
 			this.Button_LanguageSwitcher.Text = "  English";
 			this.Button_LanguageSwitcher.TextAlign = ContentAlignment.MiddleLeft;
 			this.Button_LanguageSwitcher.TextImageRelation = TextImageRelation.ImageBeforeText;
@@ -213,7 +213,7 @@ namespace ILMergeUI
 			this.Panel_FormsArea.Location = new Point(240, 60);
 			this.Panel_FormsArea.Name = "Panel_FormsArea";
 			this.Panel_FormsArea.Size = new Size(760, 540);
-			this.Panel_FormsArea.TabIndex = 2;
+			this.Panel_FormsArea.TabIndex = 0;
 		}
 
 		private Panel Panel_Top;
