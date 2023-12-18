@@ -34,7 +34,8 @@ namespace ILMergeUI.ResourcesData.Forms
 			String_Body = (String_Body == String_Content) ? CommonMarkConverter.Convert(Classes.Class_UpdatesManager.Body_Get()) : String_Body;
 
 			Label_UpdateStatus.Text = Classes.Class_LocalizationManager.Translation_Get(String_UpdateStatus, String_Language);
-			HtmlLabel_Content.Text = $"<div>{String_Body}</div><style>div {{ color: #FFFFFF; }}</style>";
+			HtmlLabel_Content.Text = $"<div>{String_Body}</div><style>div {{ color: #FFFFFF; }} p {{ margin: 0px 0px 8px 0px; }}</style>"
+				.Replace($"</li>\r\n<li>\r\n<p>", "</li><br><li><p>");
 		}
 
 		private async void Program_Update()
