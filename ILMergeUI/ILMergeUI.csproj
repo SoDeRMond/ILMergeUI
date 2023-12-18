@@ -167,7 +167,6 @@
 		</BootstrapperPackage>
 	</ItemGroup>
 	<ItemGroup>
-		<Content Include="ResourcesData\Gif\Preview.gif" />
 		<Content Include="ResourcesData\Icons\Application\Icon.ico" />
 		<Content Include="ResourcesData\Icons\Tabs\Colored\Merge_Colored.png" />
 		<Content Include="ResourcesData\Icons\Tabs\Colored\Settings_Colored.png" />

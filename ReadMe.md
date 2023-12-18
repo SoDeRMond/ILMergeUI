@@ -21,7 +21,7 @@
 ***
 
 <div align="center">
-	<img src="ILMergeUI/ResourcesData/Gif/Preview.gif">
+	<img src="Preview.gif">
 </div>
 
 ***
