@@ -33,9 +33,6 @@
 		- Update Status Information
 		- Change Log
 		- Button to Download and Run the Latest Version
-	- Bottom
-		- GitHub Link
-		- Copyright Information
 - Merge
 	- Paths - <b>Double-Click to Change</b>
 		- Input
