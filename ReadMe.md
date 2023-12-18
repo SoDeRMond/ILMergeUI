@@ -5,7 +5,7 @@
 
 <div align="center">
 	<img src="https://img.shields.io/badge/.NET Framework-4.8-blue?style=for-the-badge">
-	<img src="https://img.shields.io/badge/Windows-10-yellow?style=for-the-badge">
+	<img src="https://img.shields.io/badge/Windows-10-darkorange?style=for-the-badge">
 	<img src="https://img.shields.io/badge/License-GPL--3.0-orange?style=for-the-badge">
 </div>
 
