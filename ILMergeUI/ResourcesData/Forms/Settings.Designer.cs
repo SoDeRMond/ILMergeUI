@@ -143,7 +143,7 @@ namespace ILMergeUI.ResourcesData.Forms
 			this.RadioButton_AutoProgramUpdates_Disable.Name = "RadioButton_AutoProgramUpdates_Disable";
 			this.RadioButton_AutoProgramUpdates_Disable.Padding = new Padding(4, 0, 0, 0);
 			this.RadioButton_AutoProgramUpdates_Disable.Size = new Size(366, 21);
-			this.RadioButton_AutoProgramUpdates_Disable.TabIndex = 0;
+			this.RadioButton_AutoProgramUpdates_Disable.TabIndex = 1;
 			this.RadioButton_AutoProgramUpdates_Disable.Text = "Disable";
 			this.RadioButton_AutoProgramUpdates_Disable.Click += new EventHandler(this.RadioButtons_AutoProgramUpdates_Click);
 
@@ -201,7 +201,7 @@ namespace ILMergeUI.ResourcesData.Forms
 			this.RadioButton_SavingFileAfterMerging_Disable.Name = "RadioButton_SavingFileAfterMerging_Disable";
 			this.RadioButton_SavingFileAfterMerging_Disable.Padding = new Padding(4, 0, 0, 0);
 			this.RadioButton_SavingFileAfterMerging_Disable.Size = new Size(366, 21);
-			this.RadioButton_SavingFileAfterMerging_Disable.TabIndex = 0;
+			this.RadioButton_SavingFileAfterMerging_Disable.TabIndex = 1;
 			this.RadioButton_SavingFileAfterMerging_Disable.Text = "Disable";
 			this.RadioButton_SavingFileAfterMerging_Disable.Click += new EventHandler(this.RadioButtons_SavingFileAfterMerging_Click);
 		}
