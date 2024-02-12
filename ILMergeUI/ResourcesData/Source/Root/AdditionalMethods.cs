@@ -16,7 +16,7 @@ namespace ILMergeUI.ResourcesData.Source.Root
 			catch { return false; }
 		}
 
-		public string Symbols_Remove(string String_Text)
+		public string Symbols_Delete(string String_Text)
 		{
 			string String_Digit = string.Empty;
 

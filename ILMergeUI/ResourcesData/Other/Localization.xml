@@ -149,9 +149,9 @@
 			<russian>Обновить Список</russian>
 		</translations>
 	</key>
-	<key name="Merge_Button_DeleteLibrary">
+	<key name="Merge_Button_RemoveLibrary">
 		<translations>
-			<english>Delete Library</english>
+			<english>Remove Library</english>
 			<russian>Удалить Библиотеку</russian>
 		</translations>
 	</key>

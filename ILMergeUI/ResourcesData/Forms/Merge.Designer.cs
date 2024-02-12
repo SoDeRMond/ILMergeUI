@@ -38,7 +38,7 @@ namespace ILMergeUI.ResourcesData.Forms
 			this.Panel_Right = new Panel();
 			this.Button_RefreshList = new Button();
 			this.Panel_Right_LayerOne = new Panel();
-			this.Button_DeleteLibrary = new Button();
+			this.Button_RemoveLibrary = new Button();
 			this.Panel_Right_LayerTwo = new Panel();
 			this.Button_StartMerging = new Button();
 			this.OpenFileDialog_Input = new OpenFileDialog();
@@ -231,7 +231,7 @@ namespace ILMergeUI.ResourcesData.Forms
 			this.Panel_Right.BackColor = Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(68)))));
 			this.Panel_Right.Controls.Add(this.Button_StartMerging);
 			this.Panel_Right.Controls.Add(this.Panel_Right_LayerTwo);
-			this.Panel_Right.Controls.Add(this.Button_DeleteLibrary);
+			this.Panel_Right.Controls.Add(this.Button_RemoveLibrary);
 			this.Panel_Right.Controls.Add(this.Panel_Right_LayerOne);
 			this.Panel_Right.Controls.Add(this.Button_RefreshList);
 			this.Panel_Right.Dock = DockStyle.Fill;
@@ -259,17 +259,17 @@ namespace ILMergeUI.ResourcesData.Forms
 			this.Panel_Right_LayerOne.Size = new Size(281, 30);
 			this.Panel_Right_LayerOne.TabIndex = 0;
 
-			this.Button_DeleteLibrary.Dock = DockStyle.Top;
-			this.Button_DeleteLibrary.FlatAppearance.BorderSize = 0;
-			this.Button_DeleteLibrary.FlatStyle = FlatStyle.Flat;
-			this.Button_DeleteLibrary.Font = new Font("Microsoft Sans Serif", 10F);
-			this.Button_DeleteLibrary.ForeColor = Color.White;
-			this.Button_DeleteLibrary.Location = new Point(0, 60);
-			this.Button_DeleteLibrary.Name = "Button_DeleteLibrary";
-			this.Button_DeleteLibrary.Size = new Size(281, 30);
-			this.Button_DeleteLibrary.TabIndex = 0;
-			this.Button_DeleteLibrary.Text = "Delete Library";
-			this.Button_DeleteLibrary.Click += new EventHandler(this.Button_DeleteLibrary_Click);
+			this.Button_RemoveLibrary.Dock = DockStyle.Top;
+			this.Button_RemoveLibrary.FlatAppearance.BorderSize = 0;
+			this.Button_RemoveLibrary.FlatStyle = FlatStyle.Flat;
+			this.Button_RemoveLibrary.Font = new Font("Microsoft Sans Serif", 10F);
+			this.Button_RemoveLibrary.ForeColor = Color.White;
+			this.Button_RemoveLibrary.Location = new Point(0, 60);
+			this.Button_RemoveLibrary.Name = "Button_RemoveLibrary";
+			this.Button_RemoveLibrary.Size = new Size(281, 30);
+			this.Button_RemoveLibrary.TabIndex = 0;
+			this.Button_RemoveLibrary.Text = "Remove Library";
+			this.Button_RemoveLibrary.Click += new EventHandler(this.Button_RemoveLibrary_Click);
 
 			this.Panel_Right_LayerTwo.Dock = DockStyle.Top;
 			this.Panel_Right_LayerTwo.Location = new Point(0, 90);
@@ -308,7 +308,7 @@ namespace ILMergeUI.ResourcesData.Forms
 		private Panel Panel_Right;
 		private Button Button_RefreshList;
 		private Panel Panel_Right_LayerOne;
-		private Button Button_DeleteLibrary;
+		private Button Button_RemoveLibrary;
 		private Panel Panel_Right_LayerTwo;
 		private Button Button_StartMerging;
 		private OpenFileDialog OpenFileDialog_Input;
