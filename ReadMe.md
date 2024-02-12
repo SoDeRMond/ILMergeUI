@@ -44,7 +44,7 @@
 		- Libraries
 	- List of Libraries
 	- Button to Refresh the List
-	- Button to Delete the Library
+	- Button to Remove the Library
 	- Button to Start the Merge
 - Settings
 	- Save Path - <b>Double-Click to Change</b>

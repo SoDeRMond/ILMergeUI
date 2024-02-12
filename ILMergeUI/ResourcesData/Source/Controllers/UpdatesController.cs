@@ -11,7 +11,7 @@ namespace ILMergeUI.ResourcesData.Source.Controllers
 {
 	public class UpdatesController
 	{
-		private readonly string String_CurrentVersion = Classes.Class_AdditionalMethods.Symbols_Remove(System.Windows.Forms.Application.ProductVersion);
+		private readonly string String_CurrentVersion = Classes.Class_AdditionalMethods.Symbols_Delete(System.Windows.Forms.Application.ProductVersion);
 
 		private readonly string String_CompanyName = System.Windows.Forms.Application.CompanyName;
 		private readonly string String_ProductName = System.Windows.Forms.Application.ProductName.Replace(" ", string.Empty);
@@ -28,7 +28,7 @@ namespace ILMergeUI.ResourcesData.Source.Controllers
 			GitHubClient_Update = new GitHubClient(new ProductHeaderValue(String_ProductName));
 			Release_Latest = await GitHubClient_Update.Repository.Release.GetLatest(String_CompanyName, String_ProductName);
 
-			return String_CurrentVersion != Classes.Class_AdditionalMethods.Symbols_Remove(Release_Latest.TagName);
+			return String_CurrentVersion != Classes.Class_AdditionalMethods.Symbols_Delete(Release_Latest.TagName);
 		}
 
 		public async Task<int> Status_Get()

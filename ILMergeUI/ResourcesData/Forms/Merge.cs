@@ -91,7 +91,7 @@ namespace ILMergeUI.ResourcesData.Forms
 		private void Button_RefreshList_Click(object Object_Button, EventArgs EventArgs_Click)
 		{ UI_Refresh(); }
 
-		private void Button_DeleteLibrary_Click(object Object_Button, EventArgs EventArgs_Click)
+		private void Button_RemoveLibrary_Click(object Object_Button, EventArgs EventArgs_Click)
 		{ ListBox_Libraries.Items.Remove(ListBox_Libraries.SelectedItem?.ToString()); }
 
 		private void Button_StartMerging_Click(object Object_Button, EventArgs EventArgs_Click)
