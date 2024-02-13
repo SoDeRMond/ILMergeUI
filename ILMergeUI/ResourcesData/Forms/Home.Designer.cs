@@ -137,7 +137,7 @@ namespace ILMergeUI.ResourcesData.Forms
 			this.LinkLabel_GitHub.Font = new Font("Microsoft Sans Serif", 8F);
 			this.LinkLabel_GitHub.LinkBehavior = LinkBehavior.NeverUnderline;
 			this.LinkLabel_GitHub.LinkColor = Color.Silver;
-			this.LinkLabel_GitHub.Location = new Point(606, 0);
+			this.LinkLabel_GitHub.Location = new Point(576, 0);
 			this.LinkLabel_GitHub.Name = "LinkLabel_GitHub";
 			this.LinkLabel_GitHub.Size = new Size(41, 16);
 			this.LinkLabel_GitHub.TabIndex = 0;
@@ -149,11 +149,11 @@ namespace ILMergeUI.ResourcesData.Forms
 			this.Label_Copyright.Dock = DockStyle.Right;
 			this.Label_Copyright.Font = new Font("Microsoft Sans Serif", 8F);
 			this.Label_Copyright.ForeColor = Color.White;
-			this.Label_Copyright.Location = new Point(647, 0);
+			this.Label_Copyright.Location = new Point(617, 0);
 			this.Label_Copyright.Name = "Label_Copyright";
-			this.Label_Copyright.Size = new Size(112, 16);
+			this.Label_Copyright.Size = new Size(142, 16);
 			this.Label_Copyright.TabIndex = 0;
-			this.Label_Copyright.Text = "© SoDeRMond, 2023";
+			this.Label_Copyright.Text = "© SoDeRMond, 2023—2024";
 			this.Label_Copyright.TextAlign = ContentAlignment.MiddleCenter;
 		}
 
