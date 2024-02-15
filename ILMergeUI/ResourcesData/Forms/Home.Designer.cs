@@ -28,6 +28,7 @@ namespace ILMergeUI.ResourcesData.Forms
 			this.Panel_Layer = new Panel();
 			this.Button_DownloadAndRun = new Button();
 			this.Panel_Bottom = new Panel();
+			this.Label_Version = new Label();
 			this.LinkLabel_GitHub = new LinkLabel();
 			this.Label_Copyright = new Label();
 			this.Panel_Top.SuspendLayout();
@@ -123,6 +124,7 @@ namespace ILMergeUI.ResourcesData.Forms
 			this.Button_DownloadAndRun.Text = "Download and Run";
 			this.Button_DownloadAndRun.Click += new EventHandler(this.Button_DownloadAndRun_Click);
 
+			this.Panel_Bottom.Controls.Add(this.Label_Version);
 			this.Panel_Bottom.Controls.Add(this.LinkLabel_GitHub);
 			this.Panel_Bottom.Controls.Add(this.Label_Copyright);
 			this.Panel_Bottom.Dock = DockStyle.Bottom;
@@ -131,6 +133,16 @@ namespace ILMergeUI.ResourcesData.Forms
 			this.Panel_Bottom.Padding = new Padding(0, 0, 1, 4);
 			this.Panel_Bottom.Size = new Size(760, 20);
 			this.Panel_Bottom.TabIndex = 0;
+
+			this.Label_Version.Dock = DockStyle.Left;
+			this.Label_Version.Font = new Font("Microsoft Sans Serif", 8F);
+			this.Label_Version.ForeColor = Color.White;
+			this.Label_Version.Location = new Point(0, 0);
+			this.Label_Version.Name = "Label_Version";
+			this.Label_Version.Size = new Size(80, 16);
+			this.Label_Version.TabIndex = 0;
+			this.Label_Version.Text = "Release-v1.1.2";
+			this.Label_Version.TextAlign = ContentAlignment.MiddleCenter;
 
 			this.LinkLabel_GitHub.ActiveLinkColor = Color.Gray;
 			this.LinkLabel_GitHub.Dock = DockStyle.Right;
@@ -165,6 +177,7 @@ namespace ILMergeUI.ResourcesData.Forms
 		private Panel Panel_Layer;
 		private Button Button_DownloadAndRun;
 		private Panel Panel_Bottom;
+		private Label Label_Version;
 		private LinkLabel LinkLabel_GitHub;
 		private Label Label_Copyright;
 	}
